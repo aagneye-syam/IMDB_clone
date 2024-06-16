@@ -11,7 +11,7 @@ export const Auth = () => {
   }
   return (
     <div class="container">
-    <form action="./" method="post">
+    <form action="/" method="post">
       <label for="username">Email or Phone Number:</label>
       <input type="text" id="username" name="username" placeholder="Enter email or phone number" />
 
@@ -20,7 +20,7 @@ export const Auth = () => {
         <input type="password" id="password" name="password" placeholder="Password" />
         <i class="fas fa-eye" id="togglePassword"></i> </div>
 
-      <button type="submit">Log In</button>
+      <button onClick={handleLogin}>Log In</button>
 
       <a href="#" class="forgot-password">Forgot Password?</a>
       <p>Don't have an account? <a href="#">Sign Up</a></p>
