@@ -1,19 +1,35 @@
-import React from "react"
-import "./Header.css"
-import { Link } from "react-router-dom"
-import logoImage from './assets/logo.png'
+import React from "react";
+import "./Header.css";
+import { Link } from "react-router-dom";
+import logoImage from "./assets/logo.png";
 
 const Header = () => {
-    return (
-        <div className="header">
-            <div className="headerLeft">
-                <Link to="/"><img className="header__icon" src={logoImage} /></Link>
-                <Link to="/movies/popular" style={{textDecoration: "none"}}><span>Popular</span></Link>
-                <Link to="/movies/top_rated" style={{textDecoration: "none"}}><span>Top Rated</span></Link>
-                <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>Upcoming</span></Link>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="header">
+      <div className="headerLeft">
+        <Link to="/">
+          <img className="header__icon" src={logoImage} alt="Logo" />
+        </Link>
+        <Link to="/movies/popular" style={{ textDecoration: "none" }}>
+          <span>Popular</span>
+        </Link>
+        <Link to="/movies/top_rated" style={{ textDecoration: "none" }}>
+          <span>Top Rated</span>
+        </Link>
+        <Link to="/movies/upcoming" style={{ textDecoration: "none" }}>
+          <span>Upcoming</span>
+        </Link>
+      </div>
+      <div className="headerRight"> {/* New div for right-aligned elements */}
+        <Link to="/auth" style={{ textDecoration: "none" }}>
+          <span>Sign In</span>
+        </Link>
+        <Link to="/production_company_auth" style={{ textDecoration: "none" }}>
+          <span>Co Login</span>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default Header
+export default Header;
