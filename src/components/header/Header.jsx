@@ -20,14 +20,7 @@ const Header = () => {
           <span>Upcoming</span>
         </Link>
       </div>
-      <div className="headerRight"> {/* New div for right-aligned elements */}
-        <Link to="/auth" style={{ textDecoration: "none" }}>
-          <span>Sign In</span>
-        </Link>
-        <Link to="/production_company_auth" style={{ textDecoration: "none" }}>
-          <span>Co Login</span>
-        </Link>
-      </div>
+    
     </div>
   );
 };

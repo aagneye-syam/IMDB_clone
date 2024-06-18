@@ -32,8 +32,4 @@
     font-size: 2rem;
   }
   
-  /* New rule for right-aligned elements */
-  .headerRight {
-    justify-content: flex-end; /* Aligns elements within headerRight to the right */
-  }
   
